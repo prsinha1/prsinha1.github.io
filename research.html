@@ -21,122 +21,73 @@
       </div>
     </header>
     <main id="content">
-      <section class="research-intro" aria-labelledby="research-title">
-        <div>
-          <p class="eyebrow">Research</p>
-          <h1 id="research-title">Methods for learning in dynamic environments</h1>
-        </div>
-        <p class="lead">My research studies learning systems in which data distributions, representations, and patterns of collaboration change over time. I develop methods that use feedback and structural information to preserve useful variation, support stable learning, and adapt decisions under incomplete observations.</p>
+      <section class="page-intro" aria-labelledby="research-title">
+        <h1 id="research-title">Research</h1>
+        <p>My research studies learning systems in which data distributions, representations, and patterns of collaboration change over time. I develop methods that use feedback and structural information to preserve useful variation, support stable learning, and adapt decisions under incomplete observations.</p>
       </section>
-
-      <div class="theme-nav" aria-label="Research areas">
-        <a href="#feedback">Feedback and evolving distributions</a>
-        <a href="#representations">Generative representations</a>
-        <a href="#optimization">Data selection and optimization</a>
-        <a href="#earlier">Earlier research</a>
-      </div>
-
       <section class="research-theme" id="feedback" aria-labelledby="feedback-title">
-        <div class="theme-header">
-          <p class="theme-number" aria-hidden="true">01</p>
-          <div>
-            <p class="eyebrow">Current theme</p>
-            <h2 id="feedback-title">Learning under feedback and evolving distributions</h2>
-            <p>How can learning systems use their own performance signals to change who collaborates, where information flows, and which models receive data?</p>
-          </div>
-        </div>
-        <div class="project-grid">
-          <article class="project-card" id="stable-collaboration">
-            <p class="status">Ongoing research</p>
-            <h3>Stable Collaboration in Heterogeneous Federated Learning</h3>
-            <p>In heterogeneous federated learning, a single global model may not serve all clients equally well. I develop methods that use client performance feedback to infer compatibility, form stable collaboration groups, and adapt aggregation weights through no regret learning. The objective is to promote information sharing among compatible clients while reducing harmful aggregation across incompatible distributions.</p>
-            <div class="related-work">
-              <p>Related published work</p>
-              <a href="publications.html#asilomar2023">On the Tradeoff Between Heterogeneity and Communication Complexity in Federated Learning</a>
-            </div>
-          </article>
-          <article class="project-card" id="collapse-recovery">
-            <p class="status">Accepted workshop paper, DynaFront 2 at NeurIPS 2026</p>
-            <h3>Collapse and Recovery in Clustered Federated Learning</h3>
-            <p>I study initialization induced cluster collapse by treating cluster models as the state of a controlled dynamical system and client routing as the control input. In a two group linear model, I characterize a starvation basin and derive finite horizon recovery conditions based on persistent selective exposure. Client side blocked EXP3 controllers recover distinct specialists in linear and Gaussian mixture settings, while transformed FEMNIST experiments identify a coordination limit for slower neural specialization.</p>
-            <a class="text-link" href="publications.html#dynafront2026">View publication entry <span aria-hidden="true">→</span></a>
-          </article>
-        </div>
+        <h2 id="feedback-title">Learning under feedback and evolving distributions</h2>
+        <p>I study how learning systems can use performance signals to change who collaborates, where information flows, and which models receive data.</p>
+        <article class="project" id="stable-collaboration">
+          <h3>Stable Collaboration in Heterogeneous Federated Learning</h3>
+          <p class="project-status">Ongoing research</p>
+          <p>In heterogeneous federated learning, a single global model may not serve all clients equally well. I develop methods that use client performance feedback to infer compatibility, form stable collaboration groups, and adapt aggregation weights through no regret learning. The objective is to promote information sharing among compatible clients while reducing harmful aggregation across incompatible distributions.</p>
+          <p>Related published work: <a href="publications.html#asilomar2023">On the Tradeoff Between Heterogeneity and Communication Complexity in Federated Learning</a>.</p>
+        </article>
+        <article class="project" id="collapse-recovery">
+          <h3>Collapse and Recovery in Clustered Federated Learning</h3>
+          <p class="project-status">Accepted workshop paper, DynaFront 2 at NeurIPS 2026</p>
+          <p>I study initialization induced cluster collapse by treating cluster models as the state of a controlled dynamical system and client routing as the control input. In a two group linear model, I characterize a starvation basin and derive finite horizon recovery conditions based on persistent selective exposure. Client side blocked EXP3 controllers recover distinct specialists in linear and Gaussian mixture settings, while transformed FEMNIST experiments identify a coordination limit for slower neural specialization.</p>
+          <p><a href="publications.html#dynafront2026">View publication entry</a>.</p>
+        </article>
       </section>
-
       <section class="research-theme" id="representations" aria-labelledby="representations-title">
-        <div class="theme-header">
-          <p class="theme-number" aria-hidden="true">02</p>
-          <div>
-            <p class="eyebrow">Current theme</p>
-            <h2 id="representations-title">Generative models and longitudinal representations</h2>
-            <p>What structure do generative models preserve, and can their internal representations separate meaningful temporal change from persistent individual variation?</p>
-          </div>
-        </div>
-        <div class="project-grid">
-          <article class="project-card" id="longitudinal-representations">
-            <p class="status">Ongoing research</p>
-            <h3>Longitudinal Representation Learning with Diffusion Models</h3>
-            <p>I study whether pretrained diffusion models encode structured temporal change in a form that can be separated from subject specific variation. Differences between baseline and follow up diffusion activations are analyzed using Recursive Feature Machines and Average Gradient Outer Product geometry. The objective is to extract low dimensional change coordinates for sequential monitoring with empirically calibrated false alarm control.</p>
-          </article>
-          <article class="project-card" id="rare-event-fidelity">
-            <p class="status">Accepted poster abstract, NYSDS 2026</p>
-            <h3>Rare Event Fidelity in Diffusion Models</h3>
-            <p>I study when rare or low probability structure is preserved or lost during diffusion learning and reverse sampling. The objective is to identify and improve failures in representing parts of a distribution that occur infrequently but remain important.</p>
-            <a class="text-link" href="publications.html#nysds2026">View publication entry <span aria-hidden="true">→</span></a>
-          </article>
-        </div>
+        <h2 id="representations-title">Generative models and longitudinal representations</h2>
+        <p>I study what structure generative models preserve and whether their internal representations can separate meaningful temporal change from persistent individual variation.</p>
+        <article class="project" id="longitudinal-representations">
+          <h3>Longitudinal Representation Learning with Diffusion Models</h3>
+          <p class="project-status">Ongoing research</p>
+          <p>I study whether pretrained diffusion models encode structured temporal change in a form that can be separated from subject specific variation. Differences between baseline and follow up diffusion activations are analyzed using Recursive Feature Machines and Average Gradient Outer Product geometry. The objective is to extract low dimensional change coordinates for sequential monitoring with empirically calibrated false alarm control.</p>
+        </article>
+        <article class="project" id="rare-event-fidelity">
+          <h3>Rare Event Fidelity in Diffusion Models</h3>
+          <p class="project-status">Accepted poster abstract, NYSDS 2026</p>
+          <p>I study when rare or low probability structure is preserved or lost during diffusion learning and reverse sampling. The objective is to identify and improve failures in representing parts of a distribution that occur infrequently but remain important.</p>
+          <p><a href="publications.html#nysds2026">View publication entry</a>.</p>
+        </article>
       </section>
-
       <section class="research-theme" id="optimization" aria-labelledby="optimization-title">
-        <div class="theme-header">
-          <p class="theme-number" aria-hidden="true">03</p>
-          <div>
-            <p class="eyebrow">Current theme</p>
-            <h2 id="optimization-title">Adaptive data selection and distributed optimization</h2>
-            <p>How should a learning system select data and coordinate across a network when the useful information changes across time, nodes, and model states?</p>
-          </div>
-        </div>
-        <div class="project-grid">
-          <article class="project-card" id="distributed-inverse">
-            <p class="status">Preprint in preparation</p>
-            <h3>Distributed Dynamic Inverse Problems</h3>
-            <p>I develop a decentralized Consensus ADMM method for networks whose nodes have heterogeneous observability. Edge weights and coordinate wise masks encode which information is reliable at each node, so consensus is enforced only on coordinates for which nodes possess useful information. I use multiplicative weight updates to adapt these masks with regret guarantees, producing communication patterns that approach the best fixed consensus structure in hindsight.</p>
-          </article>
-          <article class="project-card" id="dynamic-coreset">
-            <p class="status">Manuscript in preparation</p>
-            <h3>Dynamic Coreset Selection for Large Scale Machine Learning</h3>
-            <p>I develop a dynamic coreset selection method that adapts the selected data subset as the model evolves during training. The method uses multilinear extension and continuous greedy optimization to preserve gradient accuracy while substantially reducing the amount of data used.</p>
-          </article>
-        </div>
+        <h2 id="optimization-title">Adaptive data selection and distributed optimization</h2>
+        <p>I study how learning systems should select data and coordinate across a network when useful information changes across time, nodes, and model states.</p>
+        <article class="project" id="distributed-inverse">
+          <h3>Distributed Dynamic Inverse Problems</h3>
+          <p class="project-status">Preprint in preparation</p>
+          <p>I develop a decentralized Consensus ADMM method for networks whose nodes have heterogeneous observability. Edge weights and coordinate wise masks encode which information is reliable at each node, so consensus is enforced only on coordinates for which nodes possess useful information. I use multiplicative weight updates to adapt these masks with regret guarantees, producing communication patterns that approach the best fixed consensus structure in hindsight.</p>
+        </article>
+        <article class="project" id="dynamic-coreset">
+          <h3>Dynamic Coreset Selection for Large Scale Machine Learning</h3>
+          <p class="project-status">Manuscript in preparation</p>
+          <p>I develop a dynamic coreset selection method that adapts the selected data subset as the model evolves during training. The method uses multilinear extension and continuous greedy optimization to preserve gradient accuracy while substantially reducing the amount of data used.</p>
+        </article>
       </section>
-
-      <section class="research-theme earlier-research" id="earlier" aria-labelledby="earlier-title">
-        <div class="theme-header">
-          <p class="theme-number" aria-hidden="true">04</p>
-          <div>
-            <p class="eyebrow">Foundations</p>
-            <h2 id="earlier-title">Earlier research in wireless sensing and aerial systems</h2>
-            <p>My earlier research developed statistical, signal processing, and machine learning methods for detection, localization, connectivity, and tracking under noisy and heterogeneous wireless observations. This work established my background in statistical inference, distributed sensing, and learning from incomplete measurements.</p>
-          </div>
-        </div>
-        <div class="representative-work">
-          <p class="representative-label">Representative work</p>
-          <ul>
-            <li><a href="publications.html#uav-tracking">Neural Network Based Tracking of Maneuvering Unmanned Aerial Vehicles</a></li>
-            <li><a href="publications.html#uav-detection-limits">Fundamental Limits on Detection of UAVs by Existing Terrestrial RF Networks</a></li>
-          </ul>
-        </div>
+      <section class="research-theme" id="earlier" aria-labelledby="earlier-title">
+        <h2 id="earlier-title">Earlier research in wireless sensing and aerial systems</h2>
+        <p>My earlier research developed statistical, signal processing, and machine learning methods for detection, localization, connectivity, and tracking under noisy and heterogeneous wireless observations. This work established my background in statistical inference, distributed sensing, and learning from incomplete measurements.</p>
+        <p>Representative work:</p>
+        <ul>
+          <li><a href="publications.html#uav-tracking">Neural Network Based Tracking of Maneuvering Unmanned Aerial Vehicles</a></li>
+          <li><a href="publications.html#uav-detection-limits">Fundamental Limits on Detection of UAVs by Existing Terrestrial RF Networks</a></li>
+        </ul>
       </section>
     </main>
     <footer class="site-footer">
       <div class="footer-inner">
         <p>&copy; 2026 Priyanka Sinha</p>
-        <div class="footer-links">
+        <p>
           <a href="mailto:psinha1@umbc.edu">Email</a>
           <a href="https://scholar.google.com/citations?user=5IuPU9wAAAAJ&amp;hl=en">Google Scholar</a>
           <a href="https://github.com/prsinha1">GitHub</a>
-        </div>
+        </p>
       </div>
     </footer>
   </body>
