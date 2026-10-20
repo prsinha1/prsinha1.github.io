@@ -161,7 +161,21 @@ ol {
   max-width: 760px;
 }
 
-.home-profile > p:nth-of-type(2) {
+.profile-overview {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 190px;
+  align-items: start;
+  gap: 32px;
+}
+
+.profile-photo {
+  display: block;
+  width: 190px;
+  height: 190px;
+  object-fit: cover;
+}
+
+.profile-summary {
   margin-top: 24px;
 }
 
@@ -325,6 +339,26 @@ ol {
 
   main {
     padding-top: 14px;
+  }
+
+  .profile-overview {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .profile-photo {
+    grid-row: 1;
+    width: 150px;
+    height: 150px;
+    justify-self: center;
+  }
+
+  .profile-introduction {
+    grid-row: 2;
+  }
+
+  .profile-introduction h1 {
+    margin-top: 0;
   }
 
   .footer-inner {
