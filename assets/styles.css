@@ -343,3 +343,7 @@ ol {
     scroll-behavior: auto;
   }
 }
+
+li {
+  margin-bottom: 4px;
+}
